@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.circle{
+    display: inline-block;
+    top: 300px;
+    left: 600px;
+    width: 10%;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.one{
+    background-color: #FF5F9E;
+    animation: right 3s;
+    animation-fill-mode: forwards;
+
+}
+.two{
+    background-color: #B3005E;
+    animation: center 2s;
+    animation-delay: .5s;
+   
+}
+.three{
+    background-color: #610234; 
+    animation: left 3.1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes right{
+0%{
+    transform: translateX(50px);
+    }
+16%{
+    transform: translateX(0px);
+    }
+32%{
+    transform: translateY(-30px);
+}
+48%{
+    transform: translateY(0px);
+}
+64%{
+    transform: translateY(-30px);
+}
+82%{
+    transform: translateY(0);
+}
+100%{
+    transform: translateX(46px);
+}
+}
+@keyframes center{
+0%{
+    transform: translateY(0);
+}
+25%{
+    transform: translateY(-40px);
+}
+50%{
+    transform: translateY(0);
+}
+75%{
+    transform: translateY(-40px);
+}
+100%{
+    transform: translateY(0);
+}
+}
+@keyframes left{
+    0%{
+    transform: translateX(-50px);
+    }
+16%{
+    transform: translateX(0px);
+    }
+32%{
+    transform: translateY(-50px);
+}
+48%{
+    transform: translateY(0px);
+}
+64%{
+    transform: translateY(-50px);
+}
+82%{
+    transform: translateY(0);
+}
+100%{
+    transform: translateX(-50px);
+}
+}
